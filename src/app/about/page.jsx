@@ -113,21 +113,6 @@ const AboutPage = () => {
                 Node.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
-                Nest.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
-                Express.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
-                Spring Boot
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
-                GraphQL
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
-                Apollo
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
                 Redux
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
@@ -149,9 +134,6 @@ const AboutPage = () => {
                 Docker
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
-                AWS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
                 Firebase
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
@@ -159,6 +141,24 @@ const AboutPage = () => {
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
                 Figma
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
+                After Effects
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
+                Premiere Pro
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
+                Photoshop
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
+                XD
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
+                Procreate
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-gray-900 text-white hover:bg-white hover:text-black">
+                MUCH MORE
               </div>
             </motion.div>
             {/* SKILL SCROLL SVG */}
@@ -211,20 +211,21 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Engineer
+                    Junior UX Developer & Marketing Associate
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I led web development, offering expertise in JavaScript
-                    frameworks.{' '}
+                    I started in fullstack development, using .NET Core,
+                    Kubernetes and SQL. Now UX Developer and social media,
+                    blending tech and creativity in one{' '}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2024 - Present
+                  <div className="p-3 text-violet-500 text-sm font-semibold">
+                    2021 - Present
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Apple
+                    Bejoynd
                   </div>
                 </div>
                 {/* CENTER */}
@@ -232,7 +233,7 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-violet-500 bg-white -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
@@ -247,27 +248,28 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-violet-500 bg-white -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior React Developer
+                    Founder
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
-                    leveraging advanced skills.{' '}
+                    Your creative ally for digital innovation. We craft logos,
+                    animations, websites, and videos. Igniting creativity,
+                    empowering companies to shine online.{' '}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2019 - 2024{' '}
+                  <div className="p-3 text-violet-500 text-sm font-semibold">
+                    2021 - Present{' '}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
+                    WanzStudios
                   </div>
                 </div>
               </div>
@@ -277,16 +279,20 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelancer{' '}
+                    Network Technical Support{' '}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I provided web solutions, applying a range of technologies
-                    to address client requirements.{' '}
+                    I troubleshooted wireless, fiber optics, and ADSL issues for
+                    private customers, delivering prompt solutions.{' '}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2010 - 2019{' '}
+                  <div className="p-3 text-violet-500 text-sm font-bold">
+                    2020 - 2021{' '}
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    NetAtOnce
                   </div>
                 </div>
                 {/* CENTER */}
@@ -294,7 +300,7 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-violet-500 bg-white -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
