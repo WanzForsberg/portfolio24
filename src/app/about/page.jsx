@@ -30,7 +30,7 @@ const AboutPage = () => {
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY TITLE */}
-            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+            <h1 className="font-bold text-2xl">ABOUT ME</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
               My name is Jacob Forsberg, I am currently 22 years old. Since a
@@ -220,7 +220,7 @@ const AboutPage = () => {
                     blending tech and creativity in one{' '}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-violet-500 text-sm font-semibold">
+                  <div className="p-3 text-violet-950 text-sm font-semibold">
                     2021 - Present
                   </div>
                   {/* JOB COMPANY */}
@@ -233,7 +233,7 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-violet-500 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-white bg-violet-700 -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
@@ -248,7 +248,7 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-violet-500 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-white bg-violet-800 -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
@@ -264,7 +264,7 @@ const AboutPage = () => {
                     empowering companies to shine online.{' '}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-violet-500 text-sm font-semibold">
+                  <div className="p-3 text-violet-950 text-sm font-semibold">
                     2021 - Present{' '}
                   </div>
                   {/* JOB COMPANY */}
@@ -287,7 +287,7 @@ const AboutPage = () => {
                     private customers, delivering prompt solutions.{' '}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-violet-500 text-sm font-bold">
+                  <div className="p-3 text-violet-950 text-sm font-bold">
                     2020 - 2021{' '}
                   </div>
                   {/* JOB COMPANY */}
@@ -300,7 +300,7 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-violet-500 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-white bg-violet-950 -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
@@ -313,6 +313,14 @@ const AboutPage = () => {
         {/*         <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
           <Brain scrollYProgress={scrollYProgress} />
         </div> */}
+        <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
+          <Image
+            src="/baby-jake-bg.png"
+            alt="Image of jacob"
+            fill
+            className="object-contain"
+          />
+        </div>
       </div>
     </motion.div>
   );

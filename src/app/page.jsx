@@ -24,9 +24,24 @@ const Homepage = () => {
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
-          <h1 className="text-4xl md:text-6xl font-bold">
-            Creativity Ignites Dreams In A{' '}
-            <span className="text-violet-950">Glitchy</span> World.
+          <h1 className="text-4xl md:text-6xl font-bold relative">
+            Creativity Ignites Dreams In A
+            <span className="relative inline-block">
+              <span className="text-yellow-500">Glitchy</span>
+              <span className="absolute top-neg-05 left-neg-03 text-red-500">
+                Glitchy
+              </span>
+              <span className="absolute top-pos-03 left-pos-03 text-blue-500">
+                Glitchy
+              </span>
+              <span className="absolute top-neg-02 left-neg-05 text-green-500">
+                Glitchy
+              </span>
+              <span className="absolute top-pos-04 left-neg-02 text-violet-700">
+                Glitchy
+              </span>
+            </span>
+            World.
           </h1>
           {/* DESC */}
           <p className="md:text-xl">
