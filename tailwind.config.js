@@ -12,20 +12,15 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      spacing: {
+        'neg-05': '-0.5rem',
+        'pos-03': '0.3rem',
+        'neg-03': '-0.3rem',
+        'pos-04': '0.4rem',
+        'neg-02': '-0.2rem',
+        'pos-05': '0.5rem',
+      },
     },
   },
   plugins: [],
 };
-
-/* theme: {
-  extend: {
-    backgroundImage: {
-      // Remove existing gradient backgrounds
-      none: "none",
-    },
-    backgroundColor: {
-      // Define your desired dark color
-      dark: "#191819",
-    },
-  },
-}, */
