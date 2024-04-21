@@ -24,7 +24,7 @@ const ImageModal = ({ image, onClose }) => {
       style={{ backdropFilter: 'blur(8px)' }}
     >
       <div
-        className="bg-white p-4 rounded-lg shadow-lg flex flex-col md:flex-row max-w-4xl w-full"
+        className="bg-gray-400 p-4 rounded-lg shadow-lg flex flex-col md:flex-row max-w-4xl w-full"
         onClick={(e) => e.stopPropagation()} // Prevent clicks inside the modal from closing it
       >
         <img

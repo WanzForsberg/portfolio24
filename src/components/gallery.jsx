@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
-import React, { useState } from 'react'; // Ensure useState is imported from 'react'
-import ImageModal from '@/components/ImageModal'; // Assuming ImageModal is in the correct directory
+import React, { useState } from 'react';
+import ImageModal from '@/components/imageModal';
 
 export default function Gallery() {
   const images = [

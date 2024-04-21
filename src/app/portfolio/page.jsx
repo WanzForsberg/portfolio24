@@ -9,34 +9,34 @@ const items = [
   {
     id: 1,
     color: 'from-gray-500 to-slate-600',
-    title: 'Icon Pack',
+    title: 'Project 1',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    link: 'https://lama.dev',
+    img: '/projects/wanzstudios-logo-dark.png',
+    link: 'https://wanzstudios.com',
   },
   {
     id: 2,
     color: 'from-slate-600 to-slate-700',
-    title: 'Next.js Medium Blog',
+    title: 'Project 2',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    link: 'https://lama.dev',
+    img: '/projects/wanzstudios-logo-dark.png',
+    link: 'https://wanzstudios.com',
   },
   {
     id: 3,
     color: 'from-slate-700 to-slate-900',
-    title: 'Vanilla Book App',
+    title: 'Project 3',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    link: 'https://lama.dev',
+    img: '/projects/wanzstudios-logo-dark.png',
+    link: 'https://wanzstudios.com',
   },
   {
     id: 4,
     color: 'from-slate-900 to-slate-950',
-    title: 'Spotify Music App',
+    title: 'Project 4',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    img: 'https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    link: 'https://lama.dev',
+    img: '/projects/wanzstudios-logo-dark.png',
+    link: 'https://wanzstudios.com',
   },
 ];
 
@@ -73,7 +73,12 @@ const PortfolioPage = () => {
                     {item.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="" fill />
+                    <Image
+                      className="w-full h-full object-cover"
+                      src={item.img}
+                      alt=""
+                      fill
+                    />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px] text-gray-200">
                     {item.desc}
