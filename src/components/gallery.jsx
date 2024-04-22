@@ -59,19 +59,18 @@ export default function Gallery() {
 
   const [selectedImage, setSelectedImage] = useState(null); // State to manage the selected image
 
-  const rows = Math.ceil(images.length / 5);
-
   return (
-    <div className={`grid grid-cols-5`} style={{ height: `${rows * 40}vh` }}>
+    <div
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xxl:grid-cols-10 gap-4"
+      style={{ padding: '20px' }}>
       {images.map((image, index) => (
         <motion.div
           key={index}
-          className="col-span-1 h-[40vh] overflow-hidden relative"
+          className="col-span-1 overflow-hidden relative cursor-pointer"
           whileHover={{ scale: 1.1, filter: 'grayscale(0%)' }}
           transition={{ type: 'spring', stiffness: 300 }}
           initial={{ filter: 'grayscale(80%)' }}
-          onClick={() => setSelectedImage(image)}
-        >
+          onClick={() => setSelectedImage(image)}>
           <img
             src={image.src}
             alt={image.title}

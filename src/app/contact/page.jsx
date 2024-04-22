@@ -37,37 +37,48 @@ const ContactPage = () => {
       className="h-full"
       initial={{ y: '-200vh' }}
       animate={{ y: '0%' }}
-      transition={{ duration: 1 }}
-    >
-      <div className="h-full pb-5 flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      transition={{ duration: 1 }}>
+      <div className="flex flex-col lg:flex-row h-full pb-5 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center text-6xl">
-          <span className="text-white">Work With Me!</span>
-          <span className="text-violet-700">Work With Me!</span>
-          <span className="text-white">Work With Me!</span>
-          <span className="text-violet-700">Work With Me!</span>
-          <span className="text-white">Work With Me!</span>
-          <span className="text-violet-700">Work With Me!</span>
+        <div className="flex flex-col items-center justify-center text-center lg:text-left h-1/2 lg:h-full lg:w-1/2">
+          <div className="lg:hidden">
+            {' '}
+            {/* Only visible on mobile */}
+            <h2 className="text-4xl text-white">Work With Me!</h2>
+            <p className="text-xl text-violet-700 mt-4">
+              Let's create something great together. Please reach out to discuss
+              your project.
+            </p>
+          </div>
+          <div className="hidden lg:flex lg:flex-col">
+            {' '}
+            {/* Only visible on desktop, stacked vertically */}
+            <span className="text-white text-6xl">Work With Me!</span>
+            <span className="text-violet-700 text-6xl">Work With Me!</span>
+            <span className="text-white text-6xl">Work With Me!</span>
+            <span className="text-violet-700 text-6xl">Work With Me!</span>
+            <span className="text-white text-6xl">Work With Me!</span>
+            <span className="text-violet-700 text-6xl">Work With Me!</span>
+          </div>
         </div>
         {/* FORM CONTAINER */}
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-slate-800 text-white underline-white rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
-        >
+          className="flex flex-col gap-8 justify-center bg-slate-800 text-white underline-white rounded-xl text-xl p-4 sm:p-8 md:p-12 lg:p-24 h-1/2 lg:h-full lg:w-1/2">
           <span>Dear Jacob,</span>
           <textarea
-            rows={6}
-            className="bg-transparent border-2 border-violet-700 outline-none resize-none"
+            rows={3}
+            className="w-full bg-transparent border-2 border-violet-700 outline-none resize-none"
             name="user_message"
           />
           <span>Regards:</span>
           <input
             name="user_email"
             type="text"
-            className="bg-transparent border-b-2 border-b-violet-700 outline-none"
+            className="w-full bg-transparent border-b-2 border-violet-700 outline-none"
           />
-          <button className="bg-violet-700 rounded font-semibold text-white p-4">
+          <button className="w-full lg:w-auto bg-violet-700 rounded font-semibold text-white p-4">
             Send
           </button>
           {success && (
