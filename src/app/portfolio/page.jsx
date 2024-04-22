@@ -1,13 +1,10 @@
 'use client';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import Gallery from '@/components/gallery';
 
 const PortfolioPage = () => {
   const ref = useRef();
-
-  const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ['0%', '-60%']);
 
   return (
     <motion.div

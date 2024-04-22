@@ -46,8 +46,8 @@ const ContactPage = () => {
             {/* Only visible on mobile */}
             <h2 className="text-4xl text-white">Work With Me!</h2>
             <p className="text-xl text-violet-700 mt-4">
-              Let's create something great together. Please reach out to discuss
-              your project.
+              Let&apos;s create something great together. Please reach out to
+              discuss your project.
             </p>
           </div>
           <div className="hidden lg:flex lg:flex-col">
