@@ -24,7 +24,7 @@ const Homepage = () => {
         <div className="flex flex-col items-center justify-center h-full lg:w-1/2 gap-8">
           {/* TITLE */}
           <h1 className="text-4xl md:text-6xl font-bold text-center lg:text-left">
-            Creativity Ignites Dreams In A
+            <span className="pr-2">Creativity Ignites Dreams In A</span>
             <span className="relative inline-block">
               <span className="text-yellow-500">Glitchy</span>
               <span className="absolute top-neg-05 left-neg-03 text-red-500">
