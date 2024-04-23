@@ -71,7 +71,17 @@ const Navbar = () => {
   return (
     <div className="h-full w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* INVISIBLE START ITEM */}
-      <div className="hidden w-1/3 md:flex justify-start"></div>
+      {/* <div className="hidden w-1/3 md:flex justify-start"></div> */}
+      <div className="w-1/3 hidden md:flex justify-start pt-10">
+        <Link href="/">
+          <Image
+            src="/forsberg-gekko-logo.png"
+            alt="github social icon"
+            width={220}
+            height={220}
+          />
+        </Link>
+      </div>
       {/* LINKS */}
       <div className="hidden w-1/3 md:flex gap-4 w-full justify-center">
         {links.map((link) => (
