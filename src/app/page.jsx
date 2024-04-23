@@ -9,7 +9,8 @@ const Homepage = () => {
       className="h-full"
       initial={{ y: '-200vh' }}
       animate={{ y: '0%' }}
-      transition={{ duration: 1 }}>
+      transition={{ duration: 1 }}
+    >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER - hidden on screens smaller than lg */}
         <div className="lg:h-full lg:w-1/2 relative hidden lg:block">
@@ -52,7 +53,8 @@ const Homepage = () => {
           <div className="w-full flex flex-col lg:flex-row gap-4 items-center justify-center lg:justify-start">
             <button
               href="/portfolio"
-              className="p-4 rounded-lg ring-1 ring-violet-950 bg-violet-950 text-white w-full lg:w-auto">
+              className="p-4 rounded-lg ring-1 ring-violet-950 bg-violet-950 text-white w-full lg:w-auto"
+            >
               EXPLORE MY WORLD
             </button>
           </div>
