@@ -14,7 +14,7 @@ const TransitionProvider = ({ children }) => {
         key={pathName}
         className="w-screen h-screen bg-gradient-to-b from-violet-100 to-red-100"
       > */}
-      <div key={pathName} className="w-screen h-screen bg-gray-400 ">
+      <div key={pathName} className="w-screen h-screen bg-slate-50 ">
         <motion.div
           className="h-screen w-screen fixed bg-violet-900 rounded-b-[100px] z-40"
           animate={{ height: '0vh' }}

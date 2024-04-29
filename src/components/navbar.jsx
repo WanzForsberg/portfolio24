@@ -75,7 +75,7 @@ const Navbar = () => {
       <div className="w-1/3 hidden md:flex justify-start pt-10">
         <Link href="/">
           <Image
-            src="/forsberg-gekko-logo.png"
+            src="/forsbergTag.png"
             alt="github social icon"
             width={220}
             height={220}
@@ -128,23 +128,19 @@ const Navbar = () => {
         {/* MENU BUTTON */}
         <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
-          onClick={() => setOpen((prev) => !prev)}
-        >
+          onClick={() => setOpen((prev) => !prev)}>
           <motion.div
             variants={topVariants}
             animate={open ? 'opened' : 'closed'}
-            className="w-10 h-1 bg-black rounded origin-left"
-          ></motion.div>
+            className="w-10 h-1 bg-black rounded origin-left"></motion.div>
           <motion.div
             variants={centerVariants}
             animate={open ? 'opened' : 'closed'}
-            className="w-10 h-1 bg-black rounded"
-          ></motion.div>
+            className="w-10 h-1 bg-black rounded"></motion.div>
           <motion.div
             variants={bottomVariants}
             animate={open ? 'opened' : 'closed'}
-            className="w-10 h-1 bg-black rounded origin-left"
-          ></motion.div>
+            className="w-10 h-1 bg-black rounded origin-left"></motion.div>
         </button>
         {/* MENU LIST */}
         {open && (
@@ -152,14 +148,12 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
-          >
+            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40">
             {links.map((link) => (
               <motion.div
                 variants={listItemVariants}
                 className=""
-                key={link.title}
-              >
+                key={link.title}>
                 <Link href={link.url}>{link.title}</Link>
               </motion.div>
             ))}
