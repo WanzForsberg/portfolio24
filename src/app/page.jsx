@@ -2,64 +2,58 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { useState } from 'react';
 
 const Homepage = () => {
+  const [hovered, setHovered] = useState(false);
+
   return (
     <motion.div
-      className="h-full"
+      className="h-full flex items-center justify-center"
       initial={{ y: '-200vh' }}
       animate={{ y: '0%' }}
       transition={{ duration: 1 }}>
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-        {/* IMAGE CONTAINER - hidden on screens smaller than lg */}
-        <div className="lg:h-full lg:w-1/2 relative hidden lg:block mr-6">
-          <Image
-            src="/Wanz-banner.png"
-            alt="wanz banner"
-            fill
-            className="object-contain"
-          />
-        </div>
-        {/* TEXT CONTAINER */}
-        <div className="flex flex-col items-center justify-center h-full lg:w-1/2 gap-8 mr-8">
-          {/* TITLE */}
-          <h1 className="text-4xl md:text-6xl font-bold text-center lg:text-right">
-            <span className="pr-2">Creativity Ignites Dreams.</span>
-          </h1>
-          {/* <h1 className="text-4xl md:text-6xl font-bold text-center lg:text-left">
-            <span className="pr-2">Creativity Ignites Dreams In A</span>
-            <span className="relative inline-block">
-              <span className="text-yellow-500">Glitchy</span>
-              <span className="absolute top-neg-05 left-neg-03 text-red-500">
-                Glitchy
-              </span>
-              <span className="absolute top-pos-03 left-pos-03 text-blue-500">
-                Glitchy
-              </span>
-              <span className="absolute top-neg-02 left-neg-05 text-green-500">
-                Glitchy
-              </span>
-              <span className="absolute top-pos-04 left-neg-02 text-blue-600">
-                Glitchy
-              </span>
-            </span>
-            World.
-          </h1> */}
-          {/* DESCRIPTION */}
-          <p className="text-lg md:text-xl text-center lg:text-right">
-            Welcome to my digital canvas, where innovation and creativity
-            converge & give you an insight into my beautiful world as a UX
-            Developer, Marketing Associate & Creative Entrepreneur.
-          </p>
-          {/* BUTTONS */}
-          <div className="w-full flex flex-col lg:flex-row gap-4 items-center justify-center lg:justify-start">
-            {/* <Link
-              href="/kaupilla"
-              className="p-4 rounded-lg ring-1 ring-violet-950 bg-violet-950 text-white w-full lg:w-auto">
-              EXPLORE MY WORLD
-            </Link> */}
-          </div>
+      {/* Centered Image Container */}
+      <div className="relative w-1/2 h-1/2 flex items-center justify-center">
+        <Image
+          src="/Wanz-banner.png"
+          alt="wanz banner"
+          fill
+          className="object-contain"
+        />
+        {/* Dark-colored Box */}
+        <div
+          className={`absolute transform translate-x-3/4 translate-y-2 p-8 bg-gray-800 text-white w-3/4 md:w-2/3 lg:w-1/2 h-80 rounded-lg transition-all duration-500 ${
+            !hovered ? 'opacity-50' : 'opacity-100'
+          }`}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}>
+          {hovered ? (
+            // Real Text with Ripple Effect
+            <motion.div
+              className="text-left tracking-widest leading-relaxed text-slate-100"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, ease: 'easeInOut' }}>
+              <h1 className="text-2xl md:text-4xl font-bold">
+                Creativity Ignites Dreams.
+              </h1>
+              <p className="text-sm md:text-lg mt-4">
+                Welcome to my digital canvas, where innovation and creativity
+                converge & give you an insight into my beautiful world as a UX
+                Developer, Marketing Associate & Creative Entrepreneur.
+              </p>
+            </motion.div>
+          ) : (
+            // Mockup Lines
+            <div className="space-y-6 items-center justify-center opacity-50 p-8">
+              <div className="h-4 bg-gray-700 rounded w-5/6 mx-auto"></div>
+              <div className="h-4 bg-gray-700 rounded w-5/6 mx-auto"></div>
+              <div className="h-4 bg-gray-700 rounded w-5/6 mx-auto"></div>
+              <div className="h-4 bg-gray-700 rounded w-5/6 mx-auto"></div>
+              <div className="h-4 bg-gray-700 rounded w-5/6 mx-auto"></div>
+            </div>
+          )}
         </div>
       </div>
     </motion.div>
