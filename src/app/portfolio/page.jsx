@@ -15,7 +15,7 @@ const PortfolioPage = () => {
       <div className="relative" ref={ref}>
         {/* Adjusted MY CANVAS size for smaller screens */}
         <div className="w-screen h-[calc(80vh-6rem)] flex items-center justify-center text-4xl md:text-6xl lg:text-8xl text-center">
-          MY <span className="text-violet-700">CANVAS</span>
+          MY <span className="text-blue-600">CANVAS</span>
         </div>
         <div className="flex flex-col justify-center items-center w-screen pb-10 pt-10">
           <Gallery />

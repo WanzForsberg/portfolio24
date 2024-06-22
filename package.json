@@ -1,5 +1,5 @@
 {
-  "name": "lama-dev-portfolio-starter",
+  "name": "jacobforsbergweb",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,21 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.12.1",
-    "@react-three/fiber": "^8.16.3",
-    "@react-three/rapier": "^1.3.1",
-    "@vercel/analytics": "^1.2.2",
-    "framer-motion": "^11.0.3",
-    "next": "14.1.0",
+    "@emailjs/browser": "^4.3.3",
+    "@react-three/fiber": "^8.16.8",
+    "@react-three/rapier": "^1.4.0",
+    "@vercel/analytics": "^1.3.1",
+    "framer-motion": "^11.2.11",
+    "next": "14.2.4",
     "react": "18",
     "react-dom": "18",
-    "three": "^0.164.1"
+    "three": "^0.165.0"
   },
   "devDependencies": {
-    "autoprefixer": "10.0.1",
-    "eslint": "8",
-    "eslint-config-next": "14.1.0",
+    "autoprefixer": "10.4.19",
+    "eslint": "^8.38.0",
+    "eslint-config-next": "^14.2.4",
     "postcss": "8",
-    "tailwindcss": "3.3.0"
+    "tailwindcss": "3.4.4"
   }
 }

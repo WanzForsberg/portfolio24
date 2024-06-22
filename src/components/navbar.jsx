@@ -75,10 +75,10 @@ const Navbar = () => {
       <div className="w-1/3 hidden md:flex justify-start pt-10">
         <Link href="/">
           <Image
-            src="/forsbergTag.png"
+            src="/forsbergtagblue.png"
             alt="github social icon"
-            width={220}
-            height={220}
+            width={180}
+            height={180}
           />
         </Link>
       </div>
