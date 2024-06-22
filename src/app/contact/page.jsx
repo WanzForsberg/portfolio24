@@ -45,7 +45,7 @@ const ContactPage = () => {
             {' '}
             {/* Only visible on mobile */}
             <h2 className="text-4xl text-white">Work With Me!</h2>
-            <p className="text-xl text-violet-700 mt-4">
+            <p className="text-xl text-blue-600 mt-4">
               Let&apos;s create something great together. Please reach out to
               discuss your project.
             </p>
@@ -54,11 +54,11 @@ const ContactPage = () => {
             {' '}
             {/* Only visible on desktop, stacked vertically */}
             <span className="text-white text-6xl">Work With Me!</span>
-            <span className="text-violet-700 text-6xl">Work With Me!</span>
+            <span className="text-blue-600 text-6xl">Work With Me!</span>
             <span className="text-white text-6xl">Work With Me!</span>
-            <span className="text-violet-700 text-6xl">Work With Me!</span>
+            <span className="text-blue-600 text-6xl">Work With Me!</span>
             <span className="text-white text-6xl">Work With Me!</span>
-            <span className="text-violet-700 text-6xl">Work With Me!</span>
+            <span className="text-blue-600 text-6xl">Work With Me!</span>
           </div>
         </div>
         {/* FORM CONTAINER */}
@@ -69,16 +69,16 @@ const ContactPage = () => {
           <span>Dear Jacob,</span>
           <textarea
             rows={3}
-            className="w-full bg-transparent border-2 border-violet-700 outline-none resize-none"
+            className="w-full bg-transparent border-2 border-blue-600 outline-none resize-none"
             name="user_message"
           />
           <span>Regards:</span>
           <input
             name="user_email"
             type="text"
-            className="w-full bg-transparent border-b-2 border-violet-700 outline-none"
+            className="w-full bg-transparent border-b-2 border-blue-600 outline-none"
           />
-          <button className="w-full lg:w-auto bg-violet-700 rounded font-semibold text-white p-4">
+          <button className="w-full lg:w-auto bg-blue-600 rounded font-semibold text-white p-4">
             Send
           </button>
           {success && (

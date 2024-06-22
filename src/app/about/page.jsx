@@ -174,7 +174,7 @@ const AboutPage = () => {
                     Kubernetes, and SQL. Now UX Developer and social media,
                     blending tech and creativity in one.
                   </div>
-                  <div className="p-3 text-violet-950 text-sm font-semibold">
+                  <div className="p-3 text-blue-800 text-sm font-semibold">
                     2021 - Present
                   </div>
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -183,7 +183,7 @@ const AboutPage = () => {
                 </div>
                 <div className="w-1/6 flex justify-center">
                   <div className="w-1 h-full bg-gray-600 rounded relative">
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-white bg-violet-700 -left-2 top-1/2 transform -translate-y-1/2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-white bg-blue-600 -left-2 top-1/2 transform -translate-y-1/2"></div>
                   </div>
                 </div>
                 <div className="w-2/5"></div>
@@ -193,7 +193,7 @@ const AboutPage = () => {
                 <div className="w-2/5"></div>
                 <div className="w-1/6 flex justify-center">
                   <div className="w-1 h-full bg-gray-600 rounded relative">
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-white bg-violet-800 -left-2 top-1/2 transform -translate-y-1/2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-white bg-blue-800 -left-2 top-1/2 transform -translate-y-1/2"></div>
                   </div>
                 </div>
                 <div className="w-2/5">
@@ -205,7 +205,7 @@ const AboutPage = () => {
                     animations, websites, and videos. Igniting creativity,
                     empowering companies to shine online.
                   </div>
-                  <div className="p-3 text-violet-950 text-sm font-semibold">
+                  <div className="p-3 text-blue-800 text-sm font-semibold">
                     2021 - Present
                   </div>
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -223,7 +223,7 @@ const AboutPage = () => {
                     I troubleshooted wireless, fiber optics, and ADSL issues for
                     private customers, delivering prompt solutions.
                   </div>
-                  <div className="p-3 text-violet-950 text-sm font-bold">
+                  <div className="p-3 text-blue-800 text-sm font-bold">
                     2020 - 2021
                   </div>
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -232,7 +232,7 @@ const AboutPage = () => {
                 </div>
                 <div className="w-1/6 flex justify-center">
                   <div className="w-1 h-full bg-gray-600 rounded relative">
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-white bg-violet-950 -left-2 top-1/2 transform -translate-y-1/2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-white bg-blue-800 -left-2 top-1/2 transform -translate-y-1/2"></div>
                   </div>
                 </div>
                 <div className="w-2/5"></div>

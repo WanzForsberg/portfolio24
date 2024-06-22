@@ -13,18 +13,21 @@ const Homepage = () => {
       transition={{ duration: 1 }}>
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER - hidden on screens smaller than lg */}
-        <div className="lg:h-full lg:w-1/2 relative hidden lg:block">
+        <div className="lg:h-full lg:w-1/2 relative hidden lg:block mr-6">
           <Image
-            src="/baby-jake-glitch.png"
-            alt="Image of Jacob"
+            src="/Wanz-banner.png"
+            alt="wanz banner"
             fill
             className="object-contain"
           />
         </div>
         {/* TEXT CONTAINER */}
-        <div className="flex flex-col items-center justify-center h-full lg:w-1/2 gap-8">
+        <div className="flex flex-col items-center justify-center h-full lg:w-1/2 gap-8 mr-8">
           {/* TITLE */}
-          <h1 className="text-4xl md:text-6xl font-bold text-center lg:text-left">
+          <h1 className="text-4xl md:text-6xl font-bold text-center lg:text-right">
+            <span className="pr-2">Creativity Ignites Dreams.</span>
+          </h1>
+          {/* <h1 className="text-4xl md:text-6xl font-bold text-center lg:text-left">
             <span className="pr-2">Creativity Ignites Dreams In A</span>
             <span className="relative inline-block">
               <span className="text-yellow-500">Glitchy</span>
@@ -37,14 +40,14 @@ const Homepage = () => {
               <span className="absolute top-neg-02 left-neg-05 text-green-500">
                 Glitchy
               </span>
-              <span className="absolute top-pos-04 left-neg-02 text-violet-700">
+              <span className="absolute top-pos-04 left-neg-02 text-blue-600">
                 Glitchy
               </span>
             </span>
             World.
-          </h1>
+          </h1> */}
           {/* DESCRIPTION */}
-          <p className="text-lg md:text-xl text-center lg:text-left">
+          <p className="text-lg md:text-xl text-center lg:text-right">
             Welcome to my digital canvas, where innovation and creativity
             converge & give you an insight into my beautiful world as a UX
             Developer, Marketing Associate & Creative Entrepreneur.
