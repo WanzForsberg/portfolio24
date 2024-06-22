@@ -21,11 +21,11 @@ const Homepage = () => {
           fill
           className="object-contain"
         />
-        {/* Dark-colored Box */}
+        {/* Dark-colored Box - Visible on Medium and Larger Screens */}
         <div
           className={`absolute transform translate-x-3/4 translate-y-2 p-8 bg-gray-800 text-white w-3/4 md:w-2/3 lg:w-1/2 h-80 rounded-lg transition-all duration-500 ${
-            !hovered ? 'opacity-50' : 'opacity-100'
-          }`}
+            hovered ? 'opacity-100' : 'opacity-50'
+          } hidden md:block`}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}>
           {hovered ? (
@@ -46,7 +46,7 @@ const Homepage = () => {
             </motion.div>
           ) : (
             // Mockup Lines
-            <div className="space-y-6 items-center justify-center opacity-50 p-8">
+            <div className="space-y-6 items-center justify-center">
               <div className="h-4 bg-gray-700 rounded w-5/6 mx-auto"></div>
               <div className="h-4 bg-gray-700 rounded w-5/6 mx-auto"></div>
               <div className="h-4 bg-gray-700 rounded w-5/6 mx-auto"></div>
